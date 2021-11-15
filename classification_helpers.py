@@ -15,7 +15,7 @@ def load_label_encoder(dir_path):
 
 
 def make_classify():
-  model_path = 'models/iva_distilber_v5_tf'
+  model_path = 'models/iva_distilber_tf'
   tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-uncased')
   model = TFDistilBertForSequenceClassification.from_pretrained(model_path)
   encoder = load_label_encoder(model_path)
